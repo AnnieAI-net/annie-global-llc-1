@@ -243,77 +243,156 @@ function Index() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section id="contact" className="border-t border-line bg-card">
+            {/* CONTACT */}
+      <section
+        id="contact"
+        className="border-t border-line bg-card"
+      >
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-          <div>
-            <div>
-              <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-inksoft">
-                Contact
-              </span>
-              <h2 className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
-                Let&apos;s find your edge.
-              </h2>
-              <p className="mt-5 max-w-md text-[15px] leading-7 text-inksoft">
-                Whether you&apos;re running an institutional book or a private mandate, our
-                specialists are ready to help.
-              </p>
-              <div className="mt-8 grid max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
-                {[
-                  {
-                    href: "mailto:anniegloballlc@gmail.com",
-                    label: "Email",
-                    value: "anniegloballlc@gmail.com",
-                    icon: Mail,
-                  },
-                  {
-                    href: "https://wa.me/13103101157",
-                    label: "WhatsApp",
-                    value: "@annieglobalofficial",
-                    icon: MessageCircle,
-                  },
-                  {
-                    href: "tel:+13103101157",
-                    label: "Phone",
-                    value: "+1 (310) 310-1157",
-                    icon: Phone,
-                  },
-                ].map(({ href, label, value, icon: Icon }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group rounded-lg border border-line bg-card p-3 transition-all duration-300 hover:border-foreground hover:shadow-sm"
-                  >
-                    <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-md border border-input">
-                      <Icon className="h-4 w-4" aria-hidden="true" />
-                    </div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-inksoft">
-                      {label}
-                    </p>
-                    <p className="mt-1 break-all text-[15px] leading-6 text-foreground">{value}</p>
-                  </a>
-                ))}
-                <a
-                  href="https://maps.google.com/?q=55+West,+47+Street,+New+York,+NY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group rounded-lg border border-line bg-card p-3 transition-all duration-300 hover:border-foreground hover:shadow-sm"
-                >
-                  <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-md border border-input">
-                    <MapPin className="h-4 w-4" aria-hidden="true" />
-                  </div>
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-inksoft">
-                    OFFICE
-                  </p>
-                  <p className="mt-1 text-sm leading-5 text-foreground">
-                    139 Millburn Avenue, Millburn, NJ 07041
-                  </p>
-                </a>
-              </div>
-            </div>
+
+          {/* Contact Header */}
+
+          <div className="mb-10">
+
+            <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-inksoft">
+              Contact
+            </span>
+
+            <h2 className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
+              Let's find your edge.
+            </h2>
+
+            <p className="mt-5 max-w-xl text-[15px] leading-7 text-inksoft">
+              Whether you're running an institutional book or a private mandate,
+              our specialists are ready to help.
+            </p>
+
           </div>
+
+
+          {/* CONTACT CARDS */}
+
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+
+            {/* EMAIL */}
+
+            <a
+              href="mailto:anniegloballlc@gmail.com"
+              className="group rounded-lg border border-line bg-card p-4 transition-all duration-300 hover:border-foreground hover:shadow-sm"
+            >
+
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md border border-input">
+
+                <Mail
+                  className="h-4 w-4"
+                  strokeWidth={1.6}
+                  aria-hidden="true"
+                />
+
+              </div>
+
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-inksoft">
+                Email
+              </p>
+
+              <p className="mt-2 break-all text-[14px] leading-5 text-foreground">
+                anniegloballlc@gmail.com
+              </p>
+
+            </a>
+
+
+            {/* WHATSAPP */}
+
+            <a
+              href="https://wa.me/13103101157"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-lg border border-line bg-card p-4 transition-all duration-300 hover:border-foreground hover:shadow-sm"
+            >
+
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md border border-input">
+
+                <MessageCircle
+                  className="h-4 w-4"
+                  strokeWidth={1.6}
+                  aria-hidden="true"
+                />
+
+              </div>
+
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-inksoft">
+                WhatsApp
+              </p>
+
+              <p className="mt-2 text-[14px] leading-5 text-foreground">
+                @annieglobalofficial
+              </p>
+
+            </a>
+
+
+            {/* PHONE */}
+
+            <a
+              href="tel:+13103101157"
+              className="group rounded-lg border border-line bg-card p-4 transition-all duration-300 hover:border-foreground hover:shadow-sm"
+            >
+
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md border border-input">
+
+                <Phone
+                  className="h-4 w-4"
+                  strokeWidth={1.6}
+                  aria-hidden="true"
+                />
+
+              </div>
+
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-inksoft">
+                Phone
+              </p>
+
+              <p className="mt-2 text-[14px] leading-5 text-foreground">
+                +1 (310) 310-1157
+              </p>
+
+            </a>
+
+
+            {/* OFFICE */}
+
+            <a
+              href="https://maps.google.com/?q=139+Millburn+Avenue,+Millburn,+NJ+07041"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-lg border border-line bg-card p-4 transition-all duration-300 hover:border-foreground hover:shadow-sm"
+            >
+
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md border border-input">
+
+                <MapPin
+                  className="h-4 w-4"
+                  strokeWidth={1.6}
+                  aria-hidden="true"
+                />
+
+              </div>
+
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-inksoft">
+                Office
+              </p>
+
+              <p className="mt-2 text-[14px] leading-5 text-foreground">
+                139 Millburn Avenue,
+                <br />
+                Millburn, NJ 07041
+              </p>
+
+            </a>
+
+          </div>
+
         </div>
       </section>
 
