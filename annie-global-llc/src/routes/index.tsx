@@ -262,9 +262,8 @@ function Index() {
               Let's find your edge.
             </h2>
 
-            <p className="mt-5 max-w-xl text-[15px] leading-7 text-inksoft">
-              Whether you're running an institutional book or a private mandate,
-              our specialists are ready to help.
+            <p className="mt-5 text-[15px] leading-7 text-inksoft">
+              Whether you're running an institutional book or a private mandate, our specialists are ready to help.
             </p>
 
           </div>
