@@ -246,7 +246,7 @@ function Index() {
       {/* CTA */}
       <section id="contact" className="border-t border-line bg-card">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-          <div className="grid grid-cols-1 gap-16 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+          <div>
             <div>
               <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-inksoft">
                 Contact
@@ -258,7 +258,7 @@ function Index() {
                 Whether you&apos;re running an institutional book or a private mandate, our
                 specialists are ready to help.
               </p>
-              <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div className="mt-8 grid max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
                 {[
                   {
                     href: "mailto:anniegloballlc@gmail.com",
@@ -312,63 +312,6 @@ function Index() {
                   </p>
                 </a>
               </div>
-            </div>
-            <div className="flex h-full flex-col rounded-lg border border-line bg-card p-7 shadow-sm">
-              <form
-                onSubmit={(e) => e.preventDefault()}
-                className="flex h-full flex-col space-y-6"
-              >
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div>
-                    <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.25em] text-foreground">
-                      Name
-                    </label>
-                    <input
-                      required
-                      placeholder="Jane Doe"
-                      className="w-full rounded-md border border-input bg-background px-4 py-3 outline-none transition focus:border-foreground"
-                    />
-                  </div>
-                  <div>
-                    <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.25em] text-foreground">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      placeholder="jane@company.com"
-                      className="w-full rounded-md border border-input bg-background px-4 py-3 outline-none transition focus:border-foreground"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.25em] text-foreground">
-                    Company
-                  </label>
-                  <input
-                    placeholder="Company name"
-                    className="w-full rounded-md border border-input bg-background px-4 py-3 outline-none transition focus:border-foreground"
-                  />
-                </div>
-                <div className="flex-1">
-                  <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.25em] text-foreground">
-                    Message
-                  </label>
-                  <textarea
-                    required
-                    placeholder="Describe your mandate — strategy, markets, size, timeline, or anything else our specialists should know."
-                    className="h-full min-h-[260px] w-full resize-none rounded-md border border-input bg-background px-4 py-3 outline-none transition focus:border-foreground"
-                  />
-                </div>
-                <div className="mt-auto pt-2">
-                  <button
-                    type="submit"
-                    className="w-full rounded-md bg-brand px-8 py-4 text-sm font-medium uppercase tracking-[0.25em] text-primary-foreground transition hover:bg-accent disabled:opacity-50"
-                  >
-                    Send inquiry
-                  </button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
